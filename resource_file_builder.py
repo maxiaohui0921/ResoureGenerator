@@ -238,8 +238,12 @@ class resourceBuilder():  #一个类对应一个template file，多种语言
 
     def prepare_result_folder(self):  #生成结果文件夹
         # os.chdir(projectPath)
-        result_folder = os.path.join(localPath, "result")
-        os.mkdir(result_folder)
+        result_folder = os.path.join(localPath, "temparory_folder")
+        try:
+            os.mkdir(result_folder)
+        except OSError:
+            shutil.rmtree(result_folder)
+            os.mkdir(result_folder)
         return result_folder
 
     #以下部分为主流程，获取待处理文件，根据变量生成目标文件，放到制定目录中
