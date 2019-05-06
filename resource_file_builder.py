@@ -239,6 +239,7 @@ class resourceBuilder():  #一个类对应一个template file，多种语言
     def prepare_result_folder(self):  #生成结果文件夹
         # os.chdir(projectPath)
         result_folder = os.path.join(localPath, "temparory_folder")
+        result_folder = os.path.join(localPath, "result")
         try:
             os.mkdir(result_folder)
         except OSError:
