@@ -1,0 +1,1503 @@
+Administrator@DXIT_2018 MINGW64 ~
+$ cd d:
+
+Administrator@DXIT_2018 MINGW64 /d
+$ cd beeboxes/
+
+Administrator@DXIT_2018 MINGW64 /d/beeboxes (bb_dev_3g)
+$ gitk
+
+Administrator@DXIT_2018 MINGW64 /d/beeboxes (bb_dev_3g)
+$ git reset --hard
+HEAD is now at fd49e76 Update resource file,Update resource.py file
+
+Administrator@DXIT_2018 MINGW64 /d/beeboxes (bb_dev_3g)
+$ gitk
+
+
+Administrator@DXIT_2018 MINGW64 /d
+$ git pull --rebase
+fatal: not a git repository (or any of the parent directories): .git
+
+Administrator@DXIT_2018 MINGW64 /d
+$ cd beeboxes/
+
+Administrator@DXIT_2018 MINGW64 /d/beeboxes (bb_dev_3g)
+$ git pull --rebase
+remote: Counting objects: 80, done
+remote: Finding sources: 100% (42/42)
+remote: Total 42 (delta 25), reused 41 (delta 25)
+Unpacking objects: 100% (42/42), done.
+From ssh://10.20.70.3:29418/agoldbase/platform/vendor/beeboxes
+   fac1d2d..3cfc5a9  bb_dev_3g  -> origin/bb_dev_3g
+First, rewinding head to replay your work on top of it...
+
+Administrator@DXIT_2018 MINGW64 /d/beeboxes (bb_dev_3g)
+$ git status
+On branch bb_dev_3g
+Your branch is up to date with 'origin/bb_dev_3g'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        packages/apps/Face/.idea/
+        packages/apps/Face/app/src/test/java/com/opnext/face/algorithm/
+        packages/apps/Face/app/src/test/java/com/opnext/face/application/
+        packages/apps/Settings/.idea/
+        packages/apps/Settings/app/release/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 /d/beeboxes (bb_dev_3g)
+$ gitk
+
+Administrator@DXIT_2018 MINGW64 /d/beeboxes (bb_dev_3g)
+$ git branch
+* bb_dev_3g
+  master
+
+Administrator@DXIT_2018 MINGW64 /d/beeboxes (bb_dev_3g)
+$ cd..
+bash: cd..: command not found
+
+Administrator@DXIT_2018 MINGW64 /d/beeboxes (bb_dev_3g)
+$ cd ..
+
+Administrator@DXIT_2018 MINGW64 /d
+$ cd ..
+
+Administrator@DXIT_2018 MINGW64 /
+$ ls
+bin/  cmd/  dev/  etc/  git-bash.exe*  git-cmd.exe*  LICENSE.txt  mingw64/  proc/  ReleaseNotes.html  tmp/  unins000.dat  unins000.exe*  unins000.msg  usr/
+
+Administrator@DXIT_2018 MINGW64 /
+$ cd C:\Users\Administrator\Desktop\github_project\resource
+bash: cd: C:UsersAdministratorDesktopgithub_projectresource: No such file or directory
+
+Administrator@DXIT_2018 MINGW64 /
+$ cd c:/
+
+Administrator@DXIT_2018 MINGW64 /c
+$ cd Users/Administrator/Desktop/github_project/resource/
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        resource_file_builder.py.orig
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git add resource_file_builder.py.orig
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   resource_file_builder.py.orig
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git commit .
+Aborting commit due to empty commit message.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   resource_file_builder.py.orig
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git reset HEAD resource_file_builder.py
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   resource_file_builder.py.orig
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git commit resource_file_builder.py.orig
+[master ffd884c] excer1
+ 1 file changed, 413 insertions(+)
+ create mode 100644 resource_file_builder.py.orig
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        abc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git add abc.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   abc.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git commit -amend
+error: did you mean `--amend` (with two dashes ?)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git commit --amend
+[master 76e77a0] excer1 excer2
+ Date: Thu May 9 10:04:41 2019 +0800
+ 2 files changed, 413 insertions(+)
+ create mode 100644 abc.txt
+ create mode 100644 resource_file_builder.py.orig
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git push
+fatal: TaskCanceledException encountered.
+   ????????????
+Username for 'https://github.com': maxiaohui0921@163.com
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 6.38 KiB | 3.19 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/maxiaohui0921/resource.git
+   3203411..76e77a0  master -> master
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git branch
+* master
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git branch b1_dev_3g
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        def.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git add def.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   def.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git reset HEAD
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        def.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        def.txt
+        gh.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git add .
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   def.txt
+        new file:   gh.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git reset -- gh.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   def.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        gh.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git add  .
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   def.txt
+        new file:   gh.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git reset .
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        def.txt
+        gh.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git add .
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git commit -m "ex3"
+[master 433ad11] ex3
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 def.txt
+ create mode 100644 gh.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git log
+commit 433ad11e9508709539efe29c2955acf8cf984a8f (HEAD -> master)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:32:55 2019 +0800
+
+    ex3
+
+commit 76e77a0eb22c530eff77851f1d91dcde330ab737 (origin/master, origin/HEAD, b1_dev_3g)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:04:41 2019 +0800
+
+    excer1 excer2
+
+commit 3203411698c49f61f772b1cfece9399ed51591c1
+Merge: 3817aff aa23dcc
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 16:20:11 2019 +0800
+
+    conflict
+
+commit 3817aff8fed60cdb3c50bfcc9c5100e0a1efc5ea
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception 111
+
+commit aa23dccbad38b3c2b9d431a58fb431617a6c3983
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception
+
+commit da026c65254edf6e7ac967d2638a8cf8b223e180
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 14:37:44 2019 +0800
+
+    First release basic function_0506
+
+commit 05bbaad99a0b54e41035ce190305c1449e1c06bb
+Author: maxiaohui0921 <38674823+maxiaohui0921@users.noreply.github.com>
+Date:   Mon May 6 13:29:40 2019 +0800
+
+    Initial commit
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git reset --hard 76e77a0eb22c530eff77851f1d91dcde330ab737
+HEAD is now at 76e77a0 excer1 excer2
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git log
+commit 76e77a0eb22c530eff77851f1d91dcde330ab737 (HEAD -> master, origin/master, origin/HEAD, b1_dev_3g)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:04:41 2019 +0800
+
+    excer1 excer2
+
+commit 3203411698c49f61f772b1cfece9399ed51591c1
+Merge: 3817aff aa23dcc
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 16:20:11 2019 +0800
+
+    conflict
+
+commit 3817aff8fed60cdb3c50bfcc9c5100e0a1efc5ea
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception 111
+
+commit aa23dccbad38b3c2b9d431a58fb431617a6c3983
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception
+
+commit da026c65254edf6e7ac967d2638a8cf8b223e180
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 14:37:44 2019 +0800
+
+    First release basic function_0506
+
+commit 05bbaad99a0b54e41035ce190305c1449e1c06bb
+Author: maxiaohui0921 <38674823+maxiaohui0921@users.noreply.github.com>
+Date:   Mon May 6 13:29:40 2019 +0800
+
+    Initial commit
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        def.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git add def.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   def.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git commit -m "ex4"
+[master 33d8840] ex4
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 def.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git log
+commit 33d884001ac0c34d190c23870d90a84682e89464 (HEAD -> master)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:39:23 2019 +0800
+
+    ex4
+
+commit 76e77a0eb22c530eff77851f1d91dcde330ab737 (origin/master, origin/HEAD, b1_dev_3g)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:04:41 2019 +0800
+
+    excer1 excer2
+
+commit 3203411698c49f61f772b1cfece9399ed51591c1
+Merge: 3817aff aa23dcc
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 16:20:11 2019 +0800
+
+    conflict
+
+commit 3817aff8fed60cdb3c50bfcc9c5100e0a1efc5ea
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception 111
+
+commit aa23dccbad38b3c2b9d431a58fb431617a6c3983
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception
+
+commit da026c65254edf6e7ac967d2638a8cf8b223e180
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 14:37:44 2019 +0800
+
+    First release basic function_0506
+
+commit 05bbaad99a0b54e41035ce190305c1449e1c06bb
+Author: maxiaohui0921 <38674823+maxiaohui0921@users.noreply.github.com>
+Date:   Mon May 6 13:29:40 2019 +0800
+
+    Initial commit
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git reset --soft 76e77a0eb22c530eff77851f1d91dcde330ab737
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   def.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git reset -- def.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        def.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        def.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git add def.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ gitk
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   def.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git commit -m "ex55“
+>
+这是一个测试
+> ??
+> q
+> exit
+> ^C
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   def.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git commit -m "fasfdsaf"
+[master 1dff823] fasfdsaf
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 def.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ gitk
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git branch
+  b1_dev_3g
+* master
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git branch b1_dev_3g
+fatal: A branch named 'b1_dev_3g' already exists.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git checkout b1_dev_3g
+Switched to branch 'b1_dev_3g'
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ gitk
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        dd.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git add dd.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   dd.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git commit -m "fenzhi1"
+[b1_dev_3g 6c11cf9] fenzhi1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dd.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ gitk
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git branch
+* b1_dev_3g
+  master
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push
+fatal: The current branch b1_dev_3g has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin b1_dev_3g
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push --set-upstream origin b1_dev_3g
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 221 bytes | 221.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'b1_dev_3g' on GitHub by visiting:
+remote:      https://github.com/maxiaohui0921/resource/pull/new/b1_dev_3g
+remote:
+To https://github.com/maxiaohui0921/resource.git
+ * [new branch]      b1_dev_3g -> b1_dev_3g
+Branch 'b1_dev_3g' set up to track remote branch 'b1_dev_3g' from 'origin'.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git log
+commit 6c11cf9c2bbc30367594a0d30133b22881a38026 (HEAD -> b1_dev_3g, origin/b1_dev_3g)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:50:29 2019 +0800
+
+    fenzhi1
+
+commit 76e77a0eb22c530eff77851f1d91dcde330ab737 (origin/master, origin/HEAD)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:04:41 2019 +0800
+
+    excer1 excer2
+
+commit 3203411698c49f61f772b1cfece9399ed51591c1
+Merge: 3817aff aa23dcc
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 16:20:11 2019 +0800
+
+    conflict
+
+commit 3817aff8fed60cdb3c50bfcc9c5100e0a1efc5ea
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception 111
+
+commit aa23dccbad38b3c2b9d431a58fb431617a6c3983
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception
+
+commit da026c65254edf6e7ac967d2638a8cf8b223e180
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 14:37:44 2019 +0800
+
+    First release basic function_0506
+
+commit 05bbaad99a0b54e41035ce190305c1449e1c06bb
+Author: maxiaohui0921 <38674823+maxiaohui0921@users.noreply.github.com>
+Date:   Mon May 6 13:29:40 2019 +0800
+
+    Initial commit
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git branch
+* b1_dev_3g
+  master
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ee.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ee.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git commit -a ee.txt
+fatal: Paths with -a does not make sense.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git add ee.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git commit -m "backtoumaster"
+[master 7c723ad] backtoumaster
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ee.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 421 bytes | 421.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/maxiaohui0921/resource.git
+   76e77a0..7c723ad  master -> master
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git checkout b1_dev_3g
+Switched to branch 'b1_dev_3g'
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git add 4333.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git commit -m "llala"
+[b1_dev_3g 94ef971] llala
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 4333.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 228 bytes | 228.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/maxiaohui0921/resource.git
+   6c11cf9..94ef971  b1_dev_3g -> b1_dev_3g
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git log
+commit 94ef971666f7272b68cc62c6f5876837d196f013 (HEAD -> b1_dev_3g, origin/b1_dev_3g)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:00:59 2019 +0800
+
+    llala
+
+commit 6c11cf9c2bbc30367594a0d30133b22881a38026
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:50:29 2019 +0800
+
+    fenzhi1
+
+commit 76e77a0eb22c530eff77851f1d91dcde330ab737
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:04:41 2019 +0800
+
+    excer1 excer2
+
+commit 3203411698c49f61f772b1cfece9399ed51591c1
+Merge: 3817aff aa23dcc
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 16:20:11 2019 +0800
+
+    conflict
+
+commit 3817aff8fed60cdb3c50bfcc9c5100e0a1efc5ea
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception 111
+
+commit aa23dccbad38b3c2b9d431a58fb431617a6c3983
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception
+
+commit da026c65254edf6e7ac967d2638a8cf8b223e180
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 14:37:44 2019 +0800
+
+    First release basic function_0506
+
+commit 05bbaad99a0b54e41035ce190305c1449e1c06bb
+Author: maxiaohui0921 <38674823+maxiaohui0921@users.noreply.github.com>
+Date:   Mon May 6 13:29:40 2019 +0800
+
+    Initial commit
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ ^C
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git reset --hard 6c11cf9c2bbc30367594a0d30133b22881a38026
+HEAD is now at 6c11cf9 fenzhi1
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is behind 'origin/b1_dev_3g' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git pull --rebase
+Updating 6c11cf9..94ef971
+Fast-forward
+ 4333.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 4333.txt
+Current branch b1_dev_3g is up to date.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git log
+commit 94ef971666f7272b68cc62c6f5876837d196f013 (HEAD -> b1_dev_3g, origin/b1_dev_3g)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:00:59 2019 +0800
+
+    llala
+
+commit 6c11cf9c2bbc30367594a0d30133b22881a38026
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:50:29 2019 +0800
+
+    fenzhi1
+
+commit 76e77a0eb22c530eff77851f1d91dcde330ab737
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:04:41 2019 +0800
+
+    excer1 excer2
+
+commit 3203411698c49f61f772b1cfece9399ed51591c1
+Merge: 3817aff aa23dcc
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 16:20:11 2019 +0800
+
+    conflict
+
+commit 3817aff8fed60cdb3c50bfcc9c5100e0a1efc5ea
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception 111
+
+commit aa23dccbad38b3c2b9d431a58fb431617a6c3983
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 15:35:46 2019 +0800
+
+    update result folder exception
+
+commit da026c65254edf6e7ac967d2638a8cf8b223e180
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 14:37:44 2019 +0800
+
+    First release basic function_0506
+
+commit 05bbaad99a0b54e41035ce190305c1449e1c06bb
+Author: maxiaohui0921 <38674823+maxiaohui0921@users.noreply.github.com>
+Date:   Mon May 6 13:29:40 2019 +0800
+
+    Initial commit
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git reset --hard 6c11cf9c2bbc30367594a0d30133b22881a38026
+HEAD is now at 6c11cf9 fenzhi1
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is behind 'origin/b1_dev_3g' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        3432.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git add .
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git commit . -m "hehehe"
+[b1_dev_3g 77eed7a] hehehe
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3432.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push
+fatal: TaskCanceledException encountered.
+   ????????????
+Username for 'https://github.com': maxiaohui0921@163.com
+To https://github.com/maxiaohui0921/resource.git
+ ! [rejected]        b1_dev_3g -> b1_dev_3g (non-fast-forward)
+error: failed to push some refs to 'https://github.com/maxiaohui0921/resource.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git pull --rebase
+First, rewinding head to replay your work on top of it...
+Applying: hehehe
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 233 bytes | 233.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/maxiaohui0921/resource.git
+   94ef971..803efc7  b1_dev_3g -> b1_dev_3g
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ vim aaa.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        aaa.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git add aaa.txt
+warning: LF will be replaced by CRLF in aaa.txt.
+The file will have its original line endings in your working directory
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   aaa.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ vim
+.git/                          4333.txt                       abc.txt                        README.md                      resource_file_builder.py.orig
+3432.txt                       aaa.txt                        dd.txt                         resource_file_builder.py
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ vim aaa.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   aaa.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   aaa.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git checkout aaa.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ cat
+.git/                          4333.txt                       abc.txt                        README.md                      resource_file_builder.py.orig
+3432.txt                       aaa.txt                        dd.txt                         resource_file_builder.py
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ cat aaa.txt
+abc
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ vim aaa.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ cat aaa.txt
+abc
+添加了一行
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   aaa.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   aaa.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git add aaa.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   aaa.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ vim aaa.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git checkout aaa.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   aaa.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ cat aaa
+cat: aaa: No such file or directory
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ cat aaa.txt
+abc
+添加了一行
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ vim aaa.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git checkout aaa.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ cat aaa.txt
+abc
+添加了一行
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   aaa.txt
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git commit -m "fdjks"
+[b1_dev_3g 32e4623] fdjks
+ 1 file changed, 2 insertions(+)
+ create mode 100644 aaa.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is ahead of 'origin/b1_dev_3g' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ gitk
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git checkout b1_dev_3g
+Switched to branch 'b1_dev_3g'
+Your branch is ahead of 'origin/b1_dev_3g' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is ahead of 'origin/b1_dev_3g' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+error: RPC failed; curl 7 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
+fatal: the remote end hung up unexpectedly
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git merge b1_dev_3g
+Merge made by the 'recursive' strategy.
+ 3432.txt | 0
+ 4333.txt | 0
+ aaa.txt  | 2 ++
+ dd.txt   | 0
+ 4 files changed, 2 insertions(+)
+ create mode 100644 3432.txt
+ create mode 100644 4333.txt
+ create mode 100644 aaa.txt
+ create mode 100644 dd.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 529 bytes | 529.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/maxiaohui0921/resource.git
+   7c723ad..f03082f  master -> master
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git branch -d b1_dev_3g
+warning: not deleting branch 'b1_dev_3g' that is not yet merged to
+         'refs/remotes/origin/b1_dev_3g', even though it is merged to HEAD.
+error: The branch 'b1_dev_3g' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D b1_dev_3g'.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ ls
+3432.txt  4333.txt  aaa.txt  abc.txt  dd.txt  def.txt  ee.txt  README.md  resource_file_builder.py  resource_file_builder.py.orig
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git checkout b1_dev_3g
+Switched to branch 'b1_dev_3g'
+Your branch is ahead of 'origin/b1_dev_3g' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git branch -d b1_dev_3g
+error: Cannot delete branch 'b1_dev_3g' checked out at 'C:/Users/Administrator/Desktop/github_project/resource'
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git branch -d b1_dev_3g
+warning: not deleting branch 'b1_dev_3g' that is not yet merged to
+         'refs/remotes/origin/b1_dev_3g', even though it is merged to HEAD.
+error: The branch 'b1_dev_3g' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D b1_dev_3g'.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git sta
+git: 'sta' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git branch -b selfmaxh b1_dev_3g
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (master)
+$ git checkout -b selfmaxh b1_dev_3g
+Switched to a new branch 'selfmaxh'
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (selfmaxh)
+$ git status
+On branch selfmaxh
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (selfmaxh)
+$ git checkout b1_dev_3g
+Switched to branch 'b1_dev_3g'
+Your branch is ahead of 'origin/b1_dev_3g' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git branch -d selfmaxh
+Deleted branch selfmaxh (was 32e4623).
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git branch
+* b1_dev_3g
+  master
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git checkout -b selfmaxh1 b1_dev_3g
+Switched to a new branch 'selfmaxh1'
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (selfmaxh1)
+$ git status
+On branch selfmaxh1
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (selfmaxh1)
+$ git branch
+  b1_dev_3g
+  master
+* selfmaxh1
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (selfmaxh1)
+$ ls
+3432.txt  4333.txt  aaa.txt  abc.txt  dd.txt  README.md  resource_file_builder.py  resource_file_builder.py.orig
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (selfmaxh1)
+$ vim 3432.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (selfmaxh1)
+$ git sta
+stage    stash    status
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (selfmaxh1)
+$ git status
+On branch selfmaxh1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   3432.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (selfmaxh1)
+$ git commit -a -m "selffix1"
+warning: LF will be replaced by CRLF in 3432.txt.
+The file will have its original line endings in your working directory
+[selfmaxh1 9ae5679] selffix1
+ 1 file changed, 1 insertion(+)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (selfmaxh1)
+$ git checkout b1_dev_3g
+Switched to branch 'b1_dev_3g'
+Your branch is ahead of 'origin/b1_dev_3g' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git merge --no-ff selfmaxh1
+Merge made by the 'recursive' strategy.
+ 3432.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git branch -d selfmaxh1
+Deleted branch selfmaxh1 (was 9ae5679).
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git branch
+* b1_dev_3g
+  master
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ vim 3432.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 380 bytes | 380.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/maxiaohui0921/resource.git
+   803efc7..e1ff6b1  b1_dev_3g -> b1_dev_3g
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$
