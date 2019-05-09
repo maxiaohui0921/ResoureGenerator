@@ -1501,3 +1501,325 @@ To https://github.com/maxiaohui0921/resource.git
 
 Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
 $
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git log
+commit e1ff6b1510fc1cc380b30c689c471b13c047cdde (HEAD -> b1_dev_3g, origin/b1_dev_3g)
+Merge: 32e4623 9ae5679
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 12:44:06 2019 +0800
+
+    Merge branch 'selfmaxh1' into b1_dev_3g
+
+commit 9ae5679811e3ab34083f003f7ed3b94e87f23804
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 12:42:52 2019 +0800
+
+    selffix1
+
+commit 32e4623ee901a0d94fee0bdac24c2f99d6c54da6
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:14:16 2019 +0800
+
+    fdjks
+
+commit 803efc70ba43bac16a5ac2d29f0fe6e595043597
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:03:50 2019 +0800
+
+    hehehe
+
+commit 94ef971666f7272b68cc62c6f5876837d196f013
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:00:59 2019 +0800
+
+    llala
+
+commit 6c11cf9c2bbc30367594a0d30133b22881a38026
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:50:29 2019 +0800
+
+    fenzhi1
+
+commit 76e77a0eb22c530eff77851f1d91dcde330ab737
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:04:41 2019 +0800
+
+    excer1 excer2
+
+commit 3203411698c49f61f772b1cfece9399ed51591c1
+Merge: 3817aff aa23dcc
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 16:20:11 2019 +0800
+
+    conflict
+
+commit 3817aff8fed60cdb3c50bfcc9c5100e0a1efc5ea
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git revert 803efc70ba43bac16a5ac2d29f0fe6e595043597
+error: could not revert 803efc7... hehehe
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+You are currently reverting commit 803efc7.
+  (fix conflicts and run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+
+        deleted by them: 3432.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git pull --rebase
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git branch
+* b1_dev_3g
+  master
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git checkout b1_dev_3g
+error: you need to resolve your current index first
+3432.txt: needs merge
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ ls
+3432.txt  4333.txt  aaa.txt  abc.txt  dd.txt  README.md  resource_file_builder.py  resource_file_builder.py.orig
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+You are currently reverting commit 803efc7.
+  (fix conflicts and run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+
+        deleted by them: 3432.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git add .
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+You are currently reverting commit 803efc7.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git revert --continue
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+You are currently reverting commit 803efc7.
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git log
+commit e1ff6b1510fc1cc380b30c689c471b13c047cdde (HEAD -> b1_dev_3g, origin/b1_dev_3g)
+Merge: 32e4623 9ae5679
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 12:44:06 2019 +0800
+
+    Merge branch 'selfmaxh1' into b1_dev_3g
+
+commit 9ae5679811e3ab34083f003f7ed3b94e87f23804
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 12:42:52 2019 +0800
+
+    selffix1
+
+commit 32e4623ee901a0d94fee0bdac24c2f99d6c54da6
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:14:16 2019 +0800
+
+    fdjks
+
+commit 803efc70ba43bac16a5ac2d29f0fe6e595043597
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:03:50 2019 +0800
+
+    hehehe
+
+commit 94ef971666f7272b68cc62c6f5876837d196f013
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:00:59 2019 +0800
+
+    llala
+
+commit 6c11cf9c2bbc30367594a0d30133b22881a38026
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:50:29 2019 +0800
+
+    fenzhi1
+
+commit 76e77a0eb22c530eff77851f1d91dcde330ab737
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:04:41 2019 +0800
+
+    excer1 excer2
+
+commit 3203411698c49f61f772b1cfece9399ed51591c1
+Merge: 3817aff aa23dcc
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Mon May 6 16:20:11 2019 +0800
+
+    conflict
+
+commit 3817aff8fed60cdb3c50bfcc9c5100e0a1efc5ea
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+You are currently reverting commit 803efc7.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git revert --continue
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+You are currently reverting commit 803efc7.
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git revert 803efc70ba43bac16a5ac2d29f0fe6e595043597
+error: could not revert 803efc7... hehehe
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ gitk
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git push
+Everything up-to-date
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+You are currently reverting commit 803efc7.
+  (fix conflicts and run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+
+        deleted by them: 3432.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git rm 3432.txt
+3432.txt: needs merge
+rm '3432.txt'
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ ls
+4333.txt  aaa.txt  abc.txt  dd.txt  README.md  resource_file_builder.py  resource_file_builder.py.orig
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g|REVERTING)
+$ git revert --continue
+[b1_dev_3g fa91f7f] 1 Revert "hehehe"
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 3432.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git log
+commit fa91f7ff5df168e6756d00119a972de222617bb5 (HEAD -> b1_dev_3g)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 13:11:07 2019 +0800
+
+    1 Revert "hehehe"
+
+    This reverts commit 803efc70ba43bac16a5ac2d29f0fe6e595043597.
+
+commit e1ff6b1510fc1cc380b30c689c471b13c047cdde (origin/b1_dev_3g)
+Merge: 32e4623 9ae5679
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 12:44:06 2019 +0800
+
+    Merge branch 'selfmaxh1' into b1_dev_3g
+
+commit 9ae5679811e3ab34083f003f7ed3b94e87f23804
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 12:42:52 2019 +0800
+
+    selffix1
+
+commit 32e4623ee901a0d94fee0bdac24c2f99d6c54da6
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:14:16 2019 +0800
+
+    fdjks
+
+commit 803efc70ba43bac16a5ac2d29f0fe6e595043597
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:03:50 2019 +0800
+
+    hehehe
+
+commit 94ef971666f7272b68cc62c6f5876837d196f013
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 11:00:59 2019 +0800
+
+    llala
+
+commit 6c11cf9c2bbc30367594a0d30133b22881a38026
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:50:29 2019 +0800
+
+    fenzhi1
+
+commit 76e77a0eb22c530eff77851f1d91dcde330ab737
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 10:04:41 2019 +0800
+
+    excer1 excer2
+
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$
+
