@@ -2026,3 +2026,493 @@ $ git push origin :refs/tags/show
 To https://github.com/maxiaohui0921/resource.git
  - [deleted]         show
 -------------------
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects
+$ mkdir autotest
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects
+$ cd autotest
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest
+$ git clone http://10.20.70.3:8080/terminal_auto_py
+Cloning into 'terminal_auto_py'...
+remote: Counting objects: 115, done
+remote: Finding sources: 100% (115/115)
+remote: Total 115 (delta 4), reused 112 (delta 4)
+Receiving objects: 100% (115/115), 12.28 MiB | 27.51 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest
+$ ls
+terminal_auto_py/
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest
+$ cd terminal_auto_py/
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ ls
+terminal/  webserver_api_excel/
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ cd terminal/
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py/terminal (master)
+$ ls
+all_test.py  Common/  Elements/  TestCase/
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py/terminal (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py/terminal (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    ../webserver_api_excel/.idea/apiTest_ByExcel.iml
+        deleted:    ../webserver_api_excel/.idea/misc.xml
+        deleted:    ../webserver_api_excel/.idea/modules.xml
+        deleted:    ../webserver_api_excel/.idea/vcs.xml
+        deleted:    ../webserver_api_excel/.idea/workspace.xml
+        deleted:    ../webserver_api_excel/__pycache__/common.cpython-36.pyc
+        deleted:    ../webserver_api_excel/__pycache__/config.cpython-36.pyc
+        deleted:    ../webserver_api_excel/common.py
+        deleted:    ../webserver_api_excel/config.py
+        deleted:    ../webserver_api_excel/requirements
+        deleted:    ../webserver_api_excel/test_case/API_template.xlsx
+        deleted:    ../webserver_api_excel/test_case/__init__.py
+        deleted:    ../webserver_api_excel/test_data/20.zip
+        deleted:    ../webserver_api_excel/test_data/bbox_settings.xml
+        deleted:    ../webserver_api_excel/test_data/custom_messageTpl.json
+        deleted:    ../webserver_api_excel/test_data/face1.jpg
+        deleted:    ../webserver_api_excel/test_data/importPersonsTemplet20.xlsx
+        deleted:    ../webserver_api_excel/test_data/importPersonsTemplet50.xls
+        deleted:    ../webserver_api_excel/test_data/odsl_all.conf
+        deleted:    ../webserver_api_excel/test_data/uploadPictures/3849726e-fe91-4110-ac12-1b7fe308062e.jpg
+        deleted:    ../webserver_api_excel/test_data/uploadPictures/BMP.bmp
+        deleted:    "../webserver_api_excel/test_data/uploadPictures/BMP\345\260\217\344\272\216320.bmp"
+        deleted:    ../webserver_api_excel/test_data/uploadPictures/BigPic.jpg
+        deleted:    ../webserver_api_excel/test_data/uploadPictures/GIF.gif
+        deleted:    ../webserver_api_excel/test_data/uploadPictures/JPEG.jpg
+        deleted:    ../webserver_api_excel/test_data/uploadPictures/PNG.png
+        deleted:    ../webserver_api_excel/test_data/uploadPictures/crash.txt
+        deleted:    ../webserver_api_excel/test_data/uploadPictures/import.xls
+        deleted:    ../webserver_api_excel/test_data/uploadPictures/importPersons.xlsx
+        deleted:    "../webserver_api_excel/test_data/uploadPictures/\346\255\243\345\270\270.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2211.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22110.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22111.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22112.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22113.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22114.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22115.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22116.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22117.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22118.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22119.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2212.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22120.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2213.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2214.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2215.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2216.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2217.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2218.jpg"
+        deleted:    "../webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2219.jpg"
+        deleted:    ../webserver_api_excel/test_result/__init__.py
+        deleted:    ../webserver_api_excel/test_runner/__init__.py
+        deleted:    ../webserver_api_excel/test_runner/__pycache__/__init__.cpython-36.pyc
+        deleted:    ../webserver_api_excel/test_runner/__pycache__/runApiBySession.cpython-36.pyc
+        deleted:    ../webserver_api_excel/test_runner/runApiBySession.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py/terminal (master)
+$ git commit -a -m "remove apibyexcel"
+[master 8be7001] remove apibyexcel
+ 55 files changed, 7718 deletions(-)
+ delete mode 100644 webserver_api_excel/.idea/apiTest_ByExcel.iml
+ delete mode 100644 webserver_api_excel/.idea/misc.xml
+ delete mode 100644 webserver_api_excel/.idea/modules.xml
+ delete mode 100644 webserver_api_excel/.idea/vcs.xml
+ delete mode 100644 webserver_api_excel/.idea/workspace.xml
+ delete mode 100644 webserver_api_excel/__pycache__/common.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/__pycache__/config.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/common.py
+ delete mode 100644 webserver_api_excel/config.py
+ delete mode 100644 webserver_api_excel/requirements
+ delete mode 100644 webserver_api_excel/test_case/API_template.xlsx
+ delete mode 100644 webserver_api_excel/test_case/__init__.py
+ delete mode 100644 webserver_api_excel/test_data/20.zip
+ delete mode 100644 webserver_api_excel/test_data/bbox_settings.xml
+ delete mode 100644 webserver_api_excel/test_data/custom_messageTpl.json
+ delete mode 100644 webserver_api_excel/test_data/face1.jpg
+ delete mode 100644 webserver_api_excel/test_data/importPersonsTemplet20.xlsx
+ delete mode 100644 webserver_api_excel/test_data/importPersonsTemplet50.xls
+ delete mode 100644 webserver_api_excel/test_data/odsl_all.conf
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/3849726e-fe91-4110-ac12-1b7fe308062e.jpg
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/BMP.bmp
+ delete mode 100644 "webserver_api_excel/test_data/uploadPictures/BMP\345\260\217\344\272\216320.bmp"
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/BigPic.jpg
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/GIF.gif
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/JPEG.jpg
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/PNG.png
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/crash.txt
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/import.xls
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/importPersons.xlsx
+ delete mode 100644 "webserver_api_excel/test_data/uploadPictures/\346\255\243\345\270\270.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2211.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22110.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22111.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22112.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22113.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22114.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22115.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22116.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22117.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22118.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22119.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2212.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22120.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2213.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2214.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2215.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2216.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2217.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2218.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2219.jpg"
+ delete mode 100644 webserver_api_excel/test_result/__init__.py
+ delete mode 100644 webserver_api_excel/test_runner/__init__.py
+ delete mode 100644 webserver_api_excel/test_runner/__pycache__/__init__.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/test_runner/__pycache__/runApiBySession.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/test_runner/runApiBySession.py
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py/terminal (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py/terminal (master)
+$ git push
+remote: Unauthorized
+fatal: Authentication failed for 'http://10.20.70.3:8080/terminal_auto_py/'
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py/terminal (master)
+$ git push
+remote: Unauthorized
+fatal: Authentication failed for 'http://10.20.70.3:8080/terminal_auto_py/'
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py/terminal (master)
+$ git remote -v
+origin  http://10.20.70.3:8080/terminal_auto_py (fetch)
+origin  http://10.20.70.3:8080/terminal_auto_py (push)
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py/terminal (master)
+$ cd ..
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ cd ..
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest
+$ cd ..
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects
+$ cd autotest/
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest
+$ ls
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest
+$ git clone ssh://maxiaohui@10.20.70.3:29418/terminal_auto_py
+Cloning into 'terminal_auto_py'...
+remote: Counting objects: 115, done
+remote: Finding sources: 100% (115/115)
+remote: Total 115 (delta 4), reused 112 (delta 4)
+Receiving objects: 100% (115/115), 12.28 MiB | 17.32 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest
+$ ls
+terminal_auto_py/
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest
+$ cd terminal_auto_py/
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ ls
+terminal/  webserver_api_excel/
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    webserver_api_excel/.idea/apiTest_ByExcel.iml
+        deleted:    webserver_api_excel/.idea/misc.xml
+        deleted:    webserver_api_excel/.idea/modules.xml
+        deleted:    webserver_api_excel/.idea/vcs.xml
+        deleted:    webserver_api_excel/.idea/workspace.xml
+        deleted:    webserver_api_excel/__pycache__/common.cpython-36.pyc
+        deleted:    webserver_api_excel/__pycache__/config.cpython-36.pyc
+        deleted:    webserver_api_excel/common.py
+        deleted:    webserver_api_excel/config.py
+        deleted:    webserver_api_excel/requirements
+        deleted:    webserver_api_excel/test_case/API_template.xlsx
+        deleted:    webserver_api_excel/test_case/__init__.py
+        deleted:    webserver_api_excel/test_data/20.zip
+        deleted:    webserver_api_excel/test_data/bbox_settings.xml
+        deleted:    webserver_api_excel/test_data/custom_messageTpl.json
+        deleted:    webserver_api_excel/test_data/face1.jpg
+        deleted:    webserver_api_excel/test_data/importPersonsTemplet20.xlsx
+        deleted:    webserver_api_excel/test_data/importPersonsTemplet50.xls
+        deleted:    webserver_api_excel/test_data/odsl_all.conf
+        deleted:    webserver_api_excel/test_data/uploadPictures/3849726e-fe91-4110-ac12-1b7fe308062e.jpg
+        deleted:    webserver_api_excel/test_data/uploadPictures/BMP.bmp
+        deleted:    "webserver_api_excel/test_data/uploadPictures/BMP\345\260\217\344\272\216320.bmp"
+        deleted:    webserver_api_excel/test_data/uploadPictures/BigPic.jpg
+        deleted:    webserver_api_excel/test_data/uploadPictures/GIF.gif
+        deleted:    webserver_api_excel/test_data/uploadPictures/JPEG.jpg
+        deleted:    webserver_api_excel/test_data/uploadPictures/PNG.png
+        deleted:    webserver_api_excel/test_data/uploadPictures/crash.txt
+        deleted:    webserver_api_excel/test_data/uploadPictures/import.xls
+        deleted:    webserver_api_excel/test_data/uploadPictures/importPersons.xlsx
+        deleted:    "webserver_api_excel/test_data/uploadPictures/\346\255\243\345\270\270.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2211.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22110.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22111.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22112.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22113.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22114.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22115.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22116.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22117.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22118.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22119.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2212.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22120.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2213.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2214.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2215.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2216.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2217.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2218.jpg"
+        deleted:    "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2219.jpg"
+        deleted:    webserver_api_excel/test_result/__init__.py
+        deleted:    webserver_api_excel/test_runner/__init__.py
+        deleted:    webserver_api_excel/test_runner/__pycache__/__init__.cpython-36.pyc
+        deleted:    webserver_api_excel/test_runner/__pycache__/runApiBySession.cpython-36.pyc
+        deleted:    webserver_api_excel/test_runner/runApiBySession.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ git commit -a -m "remove folder for API_by_excel"
+[master d4a3ce6] remove folder for API_by_excel
+ 55 files changed, 7718 deletions(-)
+ delete mode 100644 webserver_api_excel/.idea/apiTest_ByExcel.iml
+ delete mode 100644 webserver_api_excel/.idea/misc.xml
+ delete mode 100644 webserver_api_excel/.idea/modules.xml
+ delete mode 100644 webserver_api_excel/.idea/vcs.xml
+ delete mode 100644 webserver_api_excel/.idea/workspace.xml
+ delete mode 100644 webserver_api_excel/__pycache__/common.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/__pycache__/config.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/common.py
+ delete mode 100644 webserver_api_excel/config.py
+ delete mode 100644 webserver_api_excel/requirements
+ delete mode 100644 webserver_api_excel/test_case/API_template.xlsx
+ delete mode 100644 webserver_api_excel/test_case/__init__.py
+ delete mode 100644 webserver_api_excel/test_data/20.zip
+ delete mode 100644 webserver_api_excel/test_data/bbox_settings.xml
+ delete mode 100644 webserver_api_excel/test_data/custom_messageTpl.json
+ delete mode 100644 webserver_api_excel/test_data/face1.jpg
+ delete mode 100644 webserver_api_excel/test_data/importPersonsTemplet20.xlsx
+ delete mode 100644 webserver_api_excel/test_data/importPersonsTemplet50.xls
+ delete mode 100644 webserver_api_excel/test_data/odsl_all.conf
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/3849726e-fe91-4110-ac12-1b7fe308062e.jpg
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/BMP.bmp
+ delete mode 100644 "webserver_api_excel/test_data/uploadPictures/BMP\345\260\217\344\272\216320.bmp"
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/BigPic.jpg
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/GIF.gif
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/JPEG.jpg
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/PNG.png
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/crash.txt
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/import.xls
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/importPersons.xlsx
+ delete mode 100644 "webserver_api_excel/test_data/uploadPictures/\346\255\243\345\270\270.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2211.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22110.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22111.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22112.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22113.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22114.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22115.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22116.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22117.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22118.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22119.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2212.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22120.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2213.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2214.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2215.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2216.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2217.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2218.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2219.jpg"
+ delete mode 100644 webserver_api_excel/test_result/__init__.py
+ delete mode 100644 webserver_api_excel/test_runner/__init__.py
+ delete mode 100644 webserver_api_excel/test_runner/__pycache__/__init__.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/test_runner/__pycache__/runApiBySession.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/test_runner/runApiBySession.py
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 247 bytes | 247.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+remote: Branch refs/heads/master:
+remote: You are not allowed to perform this operation.
+remote: To push into this reference you need 'Push' rights.
+remote: User: maxiaohui
+remote: Please read the documentation and contact an administrator
+remote: if you feel the configuration is incorrect
+remote: Processing changes: refs: 1, done
+To ssh://10.20.70.3:29418/terminal_auto_py
+ ! [remote rejected] master -> master (prohibited by Gerrit: ref update access denied)
+error: failed to push some refs to 'ssh://maxiaohui@10.20.70.3:29418/terminal_auto_py'
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ git push origin master:refs/for/master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 247 bytes | 247.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+remote: Processing changes: refs: 1, done
+remote: ERROR: [d4a3ce6] missing Change-Id in commit message footer
+remote:
+remote: Hint: To automatically insert Change-Id, install the hook:
+remote:   gitdir=$(git rev-parse --git-dir); scp -p -P 29418 maxiaohui@10.20.70.3:hooks/commit-msg ${gitdir}/hooks/
+remote: And then amend the commit:
+remote:   git commit --amend
+remote:
+To ssh://10.20.70.3:29418/terminal_auto_py
+ ! [remote rejected] master -> refs/for/master ([d4a3ce6] missing Change-Id in commit message footer)
+error: failed to push some refs to 'ssh://maxiaohui@10.20.70.3:29418/terminal_auto_py'
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ gitdir=$(git rev-parse --git-dir); scp -p -P 29418 maxiaohui@10.20.70.3:hooks/commit-msg ${gitdir}/hooks/
+commit-msg                                                                                                                                                 100% 4780   869.6KB/s   00:00
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ git commit --amend
+[master 88631e1] remove folder for API_by_excel_1
+ Date: Thu May 9 14:38:21 2019 +0800
+ 55 files changed, 7718 deletions(-)
+ delete mode 100644 webserver_api_excel/.idea/apiTest_ByExcel.iml
+ delete mode 100644 webserver_api_excel/.idea/misc.xml
+ delete mode 100644 webserver_api_excel/.idea/modules.xml
+ delete mode 100644 webserver_api_excel/.idea/vcs.xml
+ delete mode 100644 webserver_api_excel/.idea/workspace.xml
+ delete mode 100644 webserver_api_excel/__pycache__/common.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/__pycache__/config.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/common.py
+ delete mode 100644 webserver_api_excel/config.py
+ delete mode 100644 webserver_api_excel/requirements
+ delete mode 100644 webserver_api_excel/test_case/API_template.xlsx
+ delete mode 100644 webserver_api_excel/test_case/__init__.py
+ delete mode 100644 webserver_api_excel/test_data/20.zip
+ delete mode 100644 webserver_api_excel/test_data/bbox_settings.xml
+ delete mode 100644 webserver_api_excel/test_data/custom_messageTpl.json
+ delete mode 100644 webserver_api_excel/test_data/face1.jpg
+ delete mode 100644 webserver_api_excel/test_data/importPersonsTemplet20.xlsx
+ delete mode 100644 webserver_api_excel/test_data/importPersonsTemplet50.xls
+ delete mode 100644 webserver_api_excel/test_data/odsl_all.conf
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/3849726e-fe91-4110-ac12-1b7fe308062e.jpg
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/BMP.bmp
+ delete mode 100644 "webserver_api_excel/test_data/uploadPictures/BMP\345\260\217\344\272\216320.bmp"
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/BigPic.jpg
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/GIF.gif
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/JPEG.jpg
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/PNG.png
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/crash.txt
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/import.xls
+ delete mode 100644 webserver_api_excel/test_data/uploadPictures/importPersons.xlsx
+ delete mode 100644 "webserver_api_excel/test_data/uploadPictures/\346\255\243\345\270\270.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2211.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22110.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22111.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22112.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22113.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22114.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22115.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22116.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22117.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22118.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22119.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2212.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\22120.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2213.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2214.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2215.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2216.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2217.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2218.jpg"
+ delete mode 100644 "webserver_api_excel/test_data/\347\205\247\347\211\207/\345\260\217\344\272\2219.jpg"
+ delete mode 100644 webserver_api_excel/test_result/__init__.py
+ delete mode 100644 webserver_api_excel/test_runner/__init__.py
+ delete mode 100644 webserver_api_excel/test_runner/__pycache__/__init__.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/test_runner/__pycache__/runApiBySession.cpython-36.pyc
+ delete mode 100644 webserver_api_excel/test_runner/runApiBySession.py
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@DXIT_2018 MINGW64 /d/01.Projects/autotest/terminal_auto_py (master)
+$ git push origin master:refs/for/master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 290 bytes | 290.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+remote: Processing changes: new: 1, done
+remote:
+remote: New Changes:
+remote:   http://10.20.70.3:8080/#/c/terminal_auto_py/+/955 remove folder for API_by_excel_1
+remote:
+To ssh://10.20.70.3:29418/terminal_auto_py
+ * [new branch]      master -> refs/for/master
+
+
