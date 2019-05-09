@@ -1823,3 +1823,206 @@ Date:   Thu May 9 10:04:41 2019 +0800
 Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
 $
 
+
+
+------¿¿¿¿¿¿tag¿¿¿¿¿¿¿¿¿¿¿¿¿--------
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag -a v1.0 -m "tag1"
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git show
+commit 448f206377ae30cce8e45ccf94f86beccb410f5c (HEAD -> b1_dev_3g, tag: v1.0, origin/b1_dev_3g)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 13:18:01 2019 +0800
+
+    11 11 11 11 11 11 11 11 11 11 11 Revert "llala"
+
+    This reverts commit 94ef971666f7272b68cc62c6f5876837d196f013.
+
+diff --git a/4333.txt b/4333.txt
+deleted file mode 100644
+index e69de29..0000000
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag
+v1.0
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git show v1.0
+tag v1.0
+Tagger: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 13:41:45 2019 +0800
+
+tag1
+
+commit 448f206377ae30cce8e45ccf94f86beccb410f5c (HEAD -> b1_dev_3g, tag: v1.0, origin/b1_dev_3g)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 13:18:01 2019 +0800
+
+    11 11 11 11 11 11 11 11 11 11 11 Revert "llala"
+
+    This reverts commit 94ef971666f7272b68cc62c6f5876837d196f013.
+
+diff --git a/4333.txt b/4333.txt
+deleted file mode 100644
+index e69de29..0000000
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push origin --tags
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 152 bytes | 152.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To https://github.com/maxiaohui0921/resource.git
+ * [new tag]         v1.0 -> v1.0
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag
+v1.0
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag -d v1.0
+Deleted tag 'v1.0' (was be71da8)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ vim fixbug.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push origin :refs/tags/v1.0
+To https://github.com/maxiaohui0921/resource.git
+ - [deleted]         v1.0
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git status
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        fixbug.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git commit -a -m "fixbug1"
+On branch b1_dev_3g
+Your branch is up to date with 'origin/b1_dev_3g'.
+
+Untracked files:
+        fixbug.txt
+
+nothing added to commit but untracked files present
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git add fixbug.txt
+warning: LF will be replaced by CRLF in fixbug.txt.
+The file will have its original line endings in your working directory
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git commit
+[b1_dev_3g 92f1f11] fix bug
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fixbug.txt
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push
+fatal: TaskCanceledException encountered.
+   ????????????
+Username for 'https://github.com': maxiaohui0921@163.com
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/maxiaohui0921/resource.git/'
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push
+fatal: unable to access 'https://github.com/maxiaohui0921/resource.git/': Failed to connect to github.com port 443: Timed out
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push
+fatal: TaskCanceledException encountered.
+   ????????????
+Username for 'https://github.com': maxiaohui0921@163.com
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/maxiaohui0921/resource.git
+   448f206..92f1f11  b1_dev_3g -> b1_dev_3g
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag -a v1.0 -m "tagafter1fix"
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag
+v1.0
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag show
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git show tag
+fatal: ambiguous argument 'tag': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git show v1.0
+tag v1.0
+Tagger: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 14:01:17 2019 +0800
+
+tagafter1fix
+
+commit 92f1f11ae1e85ea9906a31df171a2855c3c94d7a (HEAD -> b1_dev_3g, tag: v1.0, tag: show, origin/b1_dev_3g)
+Author: maxiaohui <maxiaohui@beeboxes.net>
+Date:   Thu May 9 13:57:07 2019 +0800
+
+    fix bug
+
+diff --git a/fixbug.txt b/fixbug.txt
+new file mode 100644
+index 0000000..c47ef5f
+--- /dev/null
++++ b/fixbug.txt
+@@ -0,0 +1 @@
++fix a bug for v1.0
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push origin tags
+error: src refspec tags does not match any.
+error: failed to push some refs to 'https://github.com/maxiaohui0921/resource.git'
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push origin --tags
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 158 bytes | 158.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To https://github.com/maxiaohui0921/resource.git
+ * [new tag]         show -> show
+ * [new tag]         v1.0 -> v1.0
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag
+show
+v1.0
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git tag -d show
+Deleted tag 'show' (was 92f1f11)
+
+Administrator@DXIT_2018 MINGW64 ~/Desktop/github_project/resource (b1_dev_3g)
+$ git push origin :refs/tags/show
+To https://github.com/maxiaohui0921/resource.git
+ - [deleted]         show
+-------------------
