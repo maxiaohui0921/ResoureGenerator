@@ -32,10 +32,10 @@ projectPath=os.path.join(localPath,"packages")
 
 
 #邮件信息配置
-sender='maxiaohui@beeboxes.com'
-to_receiver=['maxiaohui@beeboxes.com']
-to_receiver=['xuliyang@beeboxes.com']
-cc_reciver=['maxiaohui@beeboxes.com']
+sender='email'
+to_receiver=['email']
+to_receiver=['email']
+cc_reciver=['email']
 receiver = to_receiver + cc_reciver
 email_text = '''
         Hi all
